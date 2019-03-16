@@ -26,9 +26,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 video.accelerate.hw=1
 debug.sf.hw=1
 debug.performance.tuning=1
-debug.egl.profiler=1 
+debug.egl.profiler=1
 debug.egl.hw=1
-debug.composition.type=gpu 
+debug.composition.type=gpu
 debug.hwui.renderer=opengl
 
 # Zygote preforking
@@ -54,6 +54,8 @@ debug.sf.early_gl_phase_offset_ns=3000000
 debug.sf.early_gl_app_phase_offset_ns=15000000
 debug.sf.disable_backpressure=1
 debug.sf.enable_gl_backpressure=1
+debug.sf.enable_hwc_vds=1 \
+debug.cpurend.vsync=false
 
 #
 # System Properties for Realme 1: CPH1859
