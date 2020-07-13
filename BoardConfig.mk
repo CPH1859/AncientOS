@@ -118,13 +118,6 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
 
-# Dexpreopt
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),user)
-    WITH_DEXPREOPT ?= true
-    WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
-  endif
-endif
 
 # Exclude AudioFX
 TARGET_EXCLUDES_AUDIOFX := true
@@ -134,6 +127,9 @@ TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
+
+# Symbols
+TARGET_LD_SHIM_LIBS := /system/lib/libshowlogo.so|libshim_showlogo.so
 
 # Vndk
 BOARD_VNDK_VERSION := current

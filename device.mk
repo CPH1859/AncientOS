@@ -74,6 +74,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Symbols 
+PRODUCT_PACKAGES += \
+    libshim_showlogo
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
