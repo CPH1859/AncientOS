@@ -30,6 +30,29 @@ debug.egl.profiler=1
 debug.egl.hw=1
 debug.composition.type=gpu 
 
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.fha_enable=true \
+    ro.sys.fw.bg_apps_limit=32 \
+    ro.config.dha_cached_max=16 \
+    ro.config.dha_empty_max=42 \
+    ro.config.dha_empty_init=32 \
+    ro.config.dha_lmk_scale=0.545 \
+    ro.config.dha_th_rate=2.3 \
+    ro.config.sdha_apps_bg_max=64 \
+    ro.config.sdha_apps_bg_min=8
+
+#Blek Magik
+debug.enable.sglscale=1
+debug.sf.early_phase_offset_ns=1500000
+debug.sf.early_app_phase_offset_ns=1500000
+debug.sf.early_gl_phase_offset_ns=3000000
+debug.sf.early_gl_app_phase_offset_ns=15000000
+debug.sf.disable_backpressure=1
+debug.sf.enable_gl_backpressure=1
 
 #
 # System Properties for Realme 1: CPH1859
