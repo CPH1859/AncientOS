@@ -9,8 +9,6 @@ on init
 
 on post-fs
 	mount none /system/etc/usb_audio_policy_configuration.xml /vendor/etc/usb_audio_policy_configuration.xml bind
-	mount none /system/etc/media_codecs_mediatek_video.xml /vendor/etc/media_codecs_mediatek_video.xml bind
-        mount none /system/etc/media_codecs_mediatek_video.xml /vendor/etc/media_codecs_mediatek_video.xml bind
 
 on boot
 
