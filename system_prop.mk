@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Pixel identification
+# Enable Surface Flinger
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.build.fingerprint=google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys
+   ebug.sf.latch_unsignaled=1
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
