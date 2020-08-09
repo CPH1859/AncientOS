@@ -16,7 +16,7 @@
 #
 # Enable Surface Flinger
 PRODUCT_PRODUCT_PROPERTIES += \
-   ebug.sf.latch_unsignaled=1
+    debug.sf.latch_unsignaled=1
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
