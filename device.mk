@@ -97,10 +97,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal \
     wpa_supplicant \
     wpa_supplicant.conf
-
-# Trust
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
     
 # KPOC
 PRODUCT_PACKAGES += \
