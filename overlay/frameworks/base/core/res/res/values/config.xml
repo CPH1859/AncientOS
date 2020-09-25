@@ -64,6 +64,12 @@ wake-up source.
     <!-- If this is true, the screen will come on when you unplug 
 usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
+
+    <!-- Smart charging sysfs node and value for suspend/resume charging -->
+    <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/stop_charging_enable</string>
+    <string name="config_smartChargingSuspendValue" translatable="false">0</string>
+    <string name="config_smartChargingResumeValue" translatable="false">1</string>
+
     <!-- When true use the linux /dev/input/event subsystem to detect 
 the switch changes
          on the headphone/microphone jack. When false use the older 
