@@ -29,6 +29,7 @@ debug.performance.tuning=1
 debug.egl.profiler=1 
 debug.egl.hw=1
 debug.composition.type=gpu 
+debug.hwui.renderer=opengl
 
 # Zygote preforking
 persist.device_config.runtime_native.usap_pool_enabled=true
